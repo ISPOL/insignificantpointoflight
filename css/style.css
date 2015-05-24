@@ -1,0 +1,169 @@
+/*
+Project Name: Alan
+Author: Alan
+*/
+#wrapper {
+width: 20em;
+background: #000;
+border-radius: 1em;
+padding: 2em;
+float: left;
+border: .1em solid grey;
+//color: #fefeaa;
+color:#000;
+//background: #35C0F2;
+background:#fff;
+opacity:.980;
+-khtml-opacity:.98; 
+ -moz-opacity:.98; 
+ -ms-filter:"alpha(opacity=98)";
+  filter:alpha(opacity=98);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.98);
+-webkit-box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.4);
+-moz-box-shadow: 3px 3px 10px 8px rgba(0,0,0,0.4)
+box-shadow: 3px 3px 9px 7px rgba(0,0,0,0.4);
+position: fixed;
+top: 4.55%;
+
+}
+
+body{
+	background: #35C0F2;
+	padding:1em;
+	border-radius:.125em;
+	webkit-border-radius:.125em;
+	background-image:url('images/blackwhite.dib');
+	background-position: center;
+	background-attachment:fixed;
+	background-size: 70%;
+	<!-- background-repeat: no-repeat;-->
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #000;
+}
+#wrapper p {
+	padding-top:10px;
+
+}
+h1 {
+	margin:1px;
+	font-size:3em;
+	text-align: center;
+	text-shadow: 3px 3px 3px #999;
+	
+	}
+h2 {
+	margin:1px;
+	font-size:2em;
+	text-align: center;
+	
+	}
+
+
+ul.tabbing li {
+font-size:2em;
+background:#a4a425;
+background:#4d4d4d;
+color: #FFF;
+text-align: center;
+margin:1%;
+border-radius:50%;
+webkit-border-radius:50%;
+moz-border-radius:50%;
+opacity:.7;
+-khtml-opacity:.7; 
+ -moz-opacity:.7; 
+ -ms-filter:"alpha(opacity=7)";
+  filter:alpha(opacity=7);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
+
+
+}	
+ul.tabbing{
+list-style-type:none;
+position: relative;
+right: 7%;
+0,0,0.4);
+-moz-box-shadow: 3px 3px 10px 8px rgba(0,0,0,0.4)
+box-shadow: 3px 3px 9px 7px rgba(0,0,0,0.4);
+opacity:.980;
+-khtml-opacity:.98; 
+ -moz-opacity:.98; 
+ -ms-filter:"alpha(opacity=98)";
+  filter:alpha(opacity=98);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.98);
+
+}
+ul.tabbing li:hover
+{
+background:#000;
+cursor:pointer;
+color: #f1f1f1;
+background: green;
+
+}
+
+.tabs {
+width: 60%;
+position: relative;
+float: right;
+padding: 2em;
+opacity:.980;
+-khtml-opacity:.98; 
+ -moz-opacity:.98; 
+ -ms-filter:"alpha(opacity=98)";
+  filter:alpha(opacity=98);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.98);
+-webkit-box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.4);
+-moz-box-shadow: 3px 3px 10px 8px rgba(0,0,0,0.4)
+box-shadow: 3px 3px 9px 7px rgba(0,0,0,0.4);
+}
+
+#music {
+width:60%;
+position:relative;
+float: right;
+background: #fff;
+}
+#python {
+width: 60%;
+background: #0d0d0d;
+border-radius: 1em;
+padding: 2em;
+border: .1em solid grey;
+//color: #f8f8ff;
+float: right;
+background: #fff;
+
+}
+#debate{
+width: 60%;
+background: #0d0d0d;
+border-radius: 1em;
+padding: 2em;
+border: .1em solid grey;
+//color: #f8f8ff;
+float: right;
+background: #fff;
+}
+/*#chess {
+width: 60%;
+background: #0d0d0d;
+border-radius: 1em;
+padding: 2em;
+border: .1em solid grey;
+//color: #f8f8ff;
+float: right;
+background: #fff;
+}*/
+#art {
+width: 60%;
+background: #0d0d0d;
+border-radius: 1em;
+padding: 2em;
+border: .1em solid grey;
+//color: #f8f8ff;
+float: right;
+background: #fff;
+}
