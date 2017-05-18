@@ -16,7 +16,7 @@
 }
 @keyframes backgroundAnim{
 	from{
-		background-color:#EEE;
+		background-color:#EEF;
 	}
 	to{
 		background-color:#BBB;
@@ -25,13 +25,23 @@
 body{
 	animation:backgroundAnim 15s alternate infinite;
 }
-nav li{ /*Navbar*/
+nav{/*Navbar*/
+	overflow:auto;
+	margin:0 auto;
+	border-bottom:#2446BB 2px ridge;
+	opacity:.95;
+	background-color:#FFFFAA;
+	
+	
+}
+
+nav li{ 
 	list-style:none;
-	display:inline;
+	display:inline-block;
 	
 
 }
-nav li:hover{
+nav li a:hover{
 	opacity:.9;
 	animation:hoverBtn 2s linear alternate infinite;
 }
@@ -45,15 +55,10 @@ nav li a{
 	background-color:green;
 	box-shadow: 1px 1px 2px #000; 
 }
-.content{
+.contentWrapper{
 	display:none;
 }
-#MusicDesc{
-	margin:10px;
-	margin-top:0px;
-
-}
-.content:target{
+.contentWrapper:target{
 	
 	display:inline-block;
 	animation:navTransition 2s;
@@ -62,3 +67,22 @@ nav li a{
 //	background-color:red;
 
 }
+/*About */
+#Name{
+	font-size:36px;
+	position:fixed;
+	left:40%;
+	top:50%;
+	}
+#AboutDesc{
+
+}
+/*Projects*/
+/*Board*/
+/*Music*/
+#MusicDesc{
+	margin:10px;
+	margin-top:0px;
+
+}
+
