@@ -22,30 +22,48 @@
 		background-color:#BBB;
 	}
 }
+	@keyframes spin{
+			0%, 50%, 100%{
+				transform:rotate(2deg);
+				border:#888 5px solid;
+				border-radius:45px;
+			}
+			25%{
+				transform:rotate(-2deg);
+				border:#7A7 5px solid;
+				border-radius:5px;
+			}
+			75%{
+				transform:rotate(5deg);
+				border:#7A7 5px solid;
+				border-radius:5px;
+			}
+		}
 body{
 	animation:backgroundAnim 15s alternate infinite;
+	margin: 0 auto;
 }
-nav{/*Navbar*/
+nav{
 	overflow:auto;
-	margin:0 auto;
 	border-bottom:#2446BB 2px ridge;
 	opacity:.95;
 	background-color:#FFFFAA;
-	
-	
+	margin:0 auto;
+//	vertical-align:middle;
 }
 
-nav li{ 
+
+nav ul li{ 
 	list-style:none;
 	display:inline-block;
 	
 
 }
-nav li a:hover{
+nav ul li a:hover{
 	opacity:.9;
 	animation:hoverBtn 2s linear alternate infinite;
 }
-nav li a{
+nav ul li a{
 	color:black;
 	text-decoration:none;
 	padding:9px;
@@ -69,13 +87,32 @@ nav li a{
 }
 /*About */
 #Name{
-	font-size:36px;
+	display:block;
 	position:fixed;
-	left:40%;
-	top:50%;
+	width:100%;
+	text-align:center;
+	top:25%;
 	}
+#Name h1{
+	font-size:36px;
+}
 #AboutDesc{
+	display:none;
+	position:fixed;
+	top:45%;
+	font-family:Gothic, serif;
+	font-size:24px;
+	margin:35px;
+	padding:20px;
 
+}
+#About:hover #AboutDesc{
+	display:block;
+	animation:spin 10s linear infinite;
+}
+#About:hover #AboutDesc::before{
+
+	animation:spin 1s linear infinite;
 }
 /*Projects*/
 /*Board*/
