@@ -1,0 +1,162 @@
+@keyframes glow1{
+			0%, 100%{
+				opacity:1;
+				background-color:blue;
+			}
+			20%{
+				background-color:limegreen;
+			}
+			40%{
+				opacity:.85;
+				background-color:gold;
+				
+			}
+			60%{
+				background-color:orange;
+				
+			}
+			80%{
+				background-color:auburn;
+				
+			}
+		}
+@keyframes glow2{
+			0%, 100%{
+				opacity:1;
+				background-color:#333333;
+			}
+			50%{
+				opacity:0.95;
+				background-color:#333399;
+			}
+		}
+@keyframes glow3{
+			0%, 100%{
+				opacity:1;
+				background-color:#443333;
+			}
+			50%{
+				opacity:0.9;
+				background-color:#787815;
+			}
+		}
+@keyframes glow4{
+			0%, 100%{
+				opacity:1;
+				background-color:#553333;
+			}
+			50%{
+				opacity:0.85;
+				background-color:#951212;
+			}
+		}
+@keyframes glow5{
+			0%, 100%{
+				opacity:1;
+				background-color:#663333;
+			}
+			50%{
+				opacity:0.85;
+				background-color:#BB3636;
+			}
+		}
+@keyframes moveText{
+	0%,100%{
+		padding:10px 5px;
+	}
+	50%{
+		padding:20px 5px;
+	}
+}
+ 	#Board{
+	background-color:#333333;
+	animation:glow1 12.5s ease-in-out infinite;
+	width:100%;
+	height:100%;
+		}
+	#PreGame{
+		font: bold 30px Papyrus, serif;
+      	text-align:center;
+      	background:silver;
+      	opacity:.8;
+	}
+	#PreGame p{
+		animation:moveText 5s linear infinite;
+	}
+	#Game{
+		display:none;
+	}
+	.Tile{
+			height:50px;
+			width:50px;
+			margin:1px;
+			float:left;
+			box-shadow: .5 .5 .8 #000; /*Needs work*/
+			background-color:dodgerblue;
+			text-align:center;
+			font: bold 30px Papyrus, serif;
+			background-blend-mode:luminosity;
+		}
+		.Tile:hover{
+			opacity:.9;
+		}
+     #BoardGame{
+     		float:left;
+     		display:inline-block;
+			height:520px;
+			width:520px;
+			background-size:100% 100%;
+			background-color:transparent;//#222200;
+			background-image:url("http://i.imgur.com/jhADyem.png");
+      }
+      #Info{
+      	display:inline-block;
+      	width:50%;
+      	float:right;
+      	font: bold 30px Papyrus, serif;
+      	text-align:center;
+
+      }
+      #Info span{
+      	font:14px;
+      }
+
+      
+      .grassTile{
+      	background:url("http://i.imgur.com/2XB09Ij.png");	
+      }
+      .waterTile{
+      	background:url("http://i.imgur.com/RjCnCYt.png");
+      }
+      .roadTile{
+      	background:url("http://i.imgur.com/fKAbNUt.png");
+      }
+      .snowTile{
+      	background:url("http://i.imgur.com/IAxhGLD.png");
+      }
+      .treasureTile{
+      	background:url("http://i.imgur.com/19pl7Un.png");
+      }
+	  .mountainTile *, .mountainTile{
+      	background:url("http://i.imgur.com/UpbB1JO.png");
+      }
+      .unkTile{
+      	background:url("http://placehold.it/50/888888/ff3344?text=?");
+      }
+      .activeTile *, .activeTile{
+      //	background:url("http://i.imgur.com/u65CrnM.png");
+      background:url("http://elementscommunity.org/images/Misc/water120x120.png") 50% 50%;
+      }
+     #areaNameSpan, #tileDescriptionSpan{
+      	color:#EEEEEE;
+      }
+ 	#log{
+ 		width:50%;
+ 		height:300px;
+ 		width:600px;
+ 		resize:none;
+ 		font:"courier" 14px;
+ 		color:#CCCCCC;
+ 		background-color:#333333;
+ 		overflow:hidden;
+ 	}

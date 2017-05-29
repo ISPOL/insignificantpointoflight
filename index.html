@@ -1,7 +1,8 @@
-<DOCTYPE !HTML>
+<DOCTYPE !HTML en="us">
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="board.css">
 	</head>
 	<body>
 	<nav><ul>
@@ -22,7 +23,26 @@
 		<div>Projects Content</div>
 	</div>
 	<div id="Board" class="contentWrapper">
-		<script async src="https://github.com/ISPOL/OldHTML-CSSBoardStuff/blob/master/BrawlBoard/Game.html"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script async src="board.js"></script>
+		<div id="PreGame">
+
+			<p>Mountains of rubble and gold fly through the countryside. Aurdinas has fallen! Now the dragon rests, sleeping off the indigestion that the corpulent denizens of the golden city gave to the drake as their final parting gift. Many nations have marshalled their forces to slay the dragon and seize the riches of Aurdinas for themselves. You figure you have enough time to sneak in and nab a few treasures for yourself before they get there, if you're quick enough. You just need to make sure not to wake the dragon! </p>
+			<p>
+				Press any key to start. Arrow keys or WSAD to move.	Press space to rest. Press TAB to end the game. Press any key to bring back this screen. A blue glow means safety. A red glow indicates danger, and you should lay low until it passes. Gain score for the treasures you find, lose score each time you take a rest. Good luck!</p>
+			</div>
+
+			<div id="Game">
+				<div id="BoardGame">
+
+				</div>
+				<div id="Info">
+					<span id="areaNameSpan"></span><br>
+					<span id=tileDescriptionSpan></span><br>
+					<textarea id="log" readonly="true"></textarea>
+				</div>
+			</div>
+
 	</div>
 	<div id="Music" class="contentWrapper">
 		<div id=MusicDesc>Music has always been a big part of my life; I took formal piano lessons as a kid, but they never really stuck and I wasn't able to muster the interest to complete them. Fortunately, there are other ways to enjoy music, whether it's exploring random things on piano or composing through MuseScore. Below are some of the things I've uploaded to soundcloud! </div>
