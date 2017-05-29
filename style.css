@@ -129,6 +129,10 @@ nav ul li a{
 }
 /*Projects*/
 
+
+#Projects h3{
+	margin-top:0;
+}
 /*Board*/
 /*Music*/
 #Music{
@@ -136,7 +140,7 @@ nav ul li a{
 }
 .project, #MusicDesc{
 	margin:5px;
-	padding:25 15 25 15px;
+	padding:20px 15px 20px 15px;
 	border: silver 1px solid;
 	box-shadow: 1px 1px 2px #000; 
 	opacity:.95;
