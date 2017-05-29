@@ -1,4 +1,4 @@
-$("#About").click();
+window.location="#About";
 
 /****Global vars****/
 var loaded = false; //after splash screen = true, allow for loading tile images
