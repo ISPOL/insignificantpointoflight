@@ -72,6 +72,7 @@ nav ul li{
 }
 nav ul li a:hover{
 	opacity:.9;
+	margin:1 8 1 8px;
 	animation:hoverBtn 2s linear alternate infinite;
 }
 nav ul li a{
