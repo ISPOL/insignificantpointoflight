@@ -1,3 +1,5 @@
+$("#About").click();
+
 /****Global vars****/
 var loaded = false; //after splash screen = true, allow for loading tile images
 var board = [];  //sets up the tiles
