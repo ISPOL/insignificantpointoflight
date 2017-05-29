@@ -15,39 +15,50 @@
 	}
 }
 @keyframes backgroundAnim{
-	from{
-		background-color:#EEF;
+	0%{
+		background-color:#8A9;
 	}
-	to{
-		background-color:#BBB;
+	25%{
+		background-color:#89A;
+	}
+	50%{
+		background-color:#A89;
+	}
+	75%{
+		background-color:#A98;
 	}
 }
 	@keyframes spin{
 			0%, 50%, 100%{
-				transform:rotate(2deg);
-				border:#888 5px solid;
+				transform:rotate(1.5deg);
+				border:#CC8 5px solid;
 				border-radius:45px;
 			}
 			25%{
-				transform:rotate(-2deg);
-				border:#7A7 5px solid;
+				transform:rotate(-1.5deg);
+				border:#AAA 5px solid;
 				border-radius:5px;
 			}
 			75%{
-				transform:rotate(5deg);
-				border:#7A7 5px solid;
+				transform:rotate(-1.5deg);
+				border:#AAA 5px solid;
 				border-radius:5px;
 			}
 		}
+@keyframes name{
+	from{font-size:48px;}
+	to{font-size:86px;}
+}
 body{
 	animation:backgroundAnim 15s alternate infinite;
 	margin: 0 auto;
+	font-family: 'Metamorphous', sans-serif;
 }
 nav{
 	overflow:auto;
 	border-bottom:#2446BB 2px ridge;
 	opacity:.95;
-	background-color:#FFFFAA;
+	background-color:#C4D288;
 	margin:0 auto;
 //	vertical-align:middle;
 }
@@ -92,9 +103,10 @@ nav ul li a{
 	width:100%;
 	text-align:center;
 	top:25%;
+
 	}
 #Name h1{
-	font-size:36px;
+	animation: name 7.5s ease-in infinite alternate;
 }
 #AboutDesc{
 	display:none;
@@ -106,20 +118,27 @@ nav ul li a{
 	padding:20px;
 
 }
+
 #About:hover #AboutDesc{
 	display:block;
 	animation:spin 10s linear infinite;
 }
-#About:hover #AboutDesc::before{
-
-	animation:spin 1s linear infinite;
+#AboutDesc:hover{
+	animation:0;
 }
 /*Projects*/
 /*Board*/
 /*Music*/
+#Music{
+	background-color:orange;
+}
 #MusicDesc{
-	margin:10px;
-	margin-top:0px;
+	margin:5px;
+	padding:25 15 25 15px;
+	border: silver 1px solid;
+	box-shadow: 1px 1px 2px #000; 
+	opacity:.95;
+	background-color:beige;
 
 }
 
