@@ -128,12 +128,13 @@ nav ul li a{
 	animation:0;
 }
 /*Projects*/
+
 /*Board*/
 /*Music*/
 #Music{
 	background-color:orange;
 }
-#MusicDesc{
+.project, #MusicDesc{
 	margin:5px;
 	padding:25 15 25 15px;
 	border: silver 1px solid;
