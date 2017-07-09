@@ -16,16 +16,25 @@
 }
 @keyframes backgroundAnim{
 	0%{
-		background-color:#8A9;
+		background-color:#343;
 	}
-	25%{
-		background-color:#89A;
+	15%{
+		background-color:#A43;
 	}
-	50%{
-		background-color:#A89;
+	30%{
+		background-color:#6A4;
+	}
+	45%{
+		background-color:#65B;
+	}
+	60%{
+		background-color:#AB5;
 	}
 	75%{
 		background-color:#A98;
+	}
+	100%{
+		background-color:#AA6;
 	}
 }
 	@keyframes spin{
@@ -73,6 +82,7 @@ nav ul li{
 nav ul li a:hover{
 	opacity:.9;
 	margin:1 8 1 8px;
+	width:25%;
 	animation:hoverBtn 2s linear alternate infinite;
 }
 nav ul li a{
@@ -107,7 +117,8 @@ nav ul li a{
 
 	}
 #Name h1{
-	animation: name 7.5s ease-in infinite alternate;
+	font-size:86px;
+	animation: name 7.5s ease-in alternate;
 }
 #AboutDesc{
 	display:none;
