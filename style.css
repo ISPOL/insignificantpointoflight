@@ -14,6 +14,14 @@
 		background-color:#77AA77;
 	}
 }
+@keyframes barBackgroundAnim{
+	from{
+		background-color:#C4D288;
+	}
+	to{
+		background-color:#84C2C8;
+	}
+}
 @keyframes backgroundAnim{
 	0%{
 		background-color:#373;
@@ -74,6 +82,7 @@ nav{
 	background-color:#C4D288;
 	margin:0 auto;
 //	vertical-align:middle;
+	animation:barBackgroundAnim 15s linear alternate infinite;
 }
 
 
@@ -139,7 +148,7 @@ nav ul li a{
 
 #About:hover #AboutDesc{
 	display:block;
-	animation:spinAnim 10s linear infinite, aboutAnim 2s ease-out alternate;
+	animation:spinAnim 10s linear infinite, aboutAnim 2s ease-out alternate, barBackgroundAnim 15s linear alternate infinite;;
 }
 #AboutDesc:hover{
 	animation:0;
