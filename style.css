@@ -16,10 +16,10 @@
 }
 @keyframes backgroundAnim{
 	0%{
-		background-color:#343;
+		background-color:#373;
 	}
 	15%{
-		background-color:#A43;
+		background-color:#A53;
 	}
 	30%{
 		background-color:#6A4;
@@ -37,7 +37,7 @@
 		background-color:#AA6;
 	}
 }
-	@keyframes spin{
+	@keyframes spinAnim{
 			0%, 50%, 100%{
 				transform:rotate(1.5deg);
 				border:#CC8 5px solid;
@@ -46,20 +46,24 @@
 			25%{
 				transform:rotate(-1.5deg);
 				border:#AAA 5px solid;
-				border-radius:5px;
+				border-radius:25px;
 			}
 			75%{
 				transform:rotate(-1.5deg);
 				border:#AAA 5px solid;
-				border-radius:5px;
+				border-radius:25px;
 			}
 		}
-@keyframes name{
-	from{font-size:48px;}
+@keyframes nameAnim{
+	from{font-size:12px;}
 	to{font-size:86px;}
 }
+@keyframes aboutAnim{
+	from{font-size:12px; opacity:0.1;}
+	to{font-size:24px; opacity:1;}
+}
 body{
-	animation:backgroundAnim 15s alternate infinite;
+	animation:backgroundAnim 600s alternate infinite;
 	margin: 0 auto;
 	font-family: 'Metamorphous', sans-serif;
 }
@@ -93,6 +97,7 @@ nav ul li a{
 	height:70px;
 	width:20%;
 	background-color:green;
+	border-radius:10px;
 	box-shadow: 1px 1px 2px #000; 
 }
 .contentWrapper{
@@ -118,22 +123,23 @@ nav ul li a{
 	}
 #Name h1{
 	font-size:86px;
-	animation: name 7.5s ease-in alternate;
+	animation: nameAnim 3s ease-in alternate;
 }
 #AboutDesc{
 	display:none;
 	position:fixed;
-	top:45%;
+	top:48%;
 	font-family:Gothic, serif;
 	font-size:24px;
 	margin:35px;
 	padding:20px;
+	background-color:#C4D288;
 
 }
 
 #About:hover #AboutDesc{
 	display:block;
-	animation:spin 10s linear infinite;
+	animation:spinAnim 10s linear infinite, aboutAnim 2s ease-out alternate;
 }
 #AboutDesc:hover{
 	animation:0;
